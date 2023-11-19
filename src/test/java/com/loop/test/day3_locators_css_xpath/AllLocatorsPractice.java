@@ -7,8 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AllLocatorsPractice {
+
     public static void main(String[] args) {
-// setup the driver
+        // setup the driver
         WebDriverManager.chromedriver().setup();
 
         // create driver object
@@ -21,10 +22,11 @@ public class AllLocatorsPractice {
         WebElement firstName = driver.findElement(By.name("firstname"));
         firstName.sendKeys("Loop");
 
-        WebElement lastName = driver.findElement(By.name("lastName"));
+        WebElement lastName = driver.findElement(By.name("lastname"));
         lastName.sendKeys("Academy");
 
-        WebElement gender = driver.findElement(By.name("Gender"));
+        // this will return us 3 elements, and always will click the first one, that why we should pay attention to locate unique elements
+        WebElement gender = driver.findElement(By.name("gender"));
         gender.click();
 
 
