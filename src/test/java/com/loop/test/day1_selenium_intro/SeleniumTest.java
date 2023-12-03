@@ -9,6 +9,7 @@ public class SeleniumTest {
 
         WebDriverManager.chromedriver().setup();
 
+
         WebDriver driver = new ChromeDriver();
 
         Thread.sleep(5000);
