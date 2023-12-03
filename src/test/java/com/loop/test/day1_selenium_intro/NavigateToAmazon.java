@@ -23,6 +23,7 @@ public class NavigateToAmazon {
     navigate forward
     refresh
      */
+
         WebDriverManager.chromedriver().setup();
 
         WebDriver driver = new ChromeDriver();
