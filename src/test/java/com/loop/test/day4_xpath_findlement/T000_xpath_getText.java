@@ -3,6 +3,7 @@ package com.loop.test.day4_xpath_findlement;
 import com.loop.test.utillites.DocuportConstants;
 import com.loop.test.utillites.WebDriverFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -85,8 +86,8 @@ public class T000_xpath_getText {
 
         Thread.sleep(5000);
 
-        // 10. validate - We've sent you an email with a link to reset your password. Please check your email
-
+//        // 10. validate - We've sent you an email with a link to reset your password. Please check your email
+//
 //        try{
 //            System.out.println(successMessage.getText());
 //        } catch (StaleElementReferenceException e){
