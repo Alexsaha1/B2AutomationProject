@@ -18,7 +18,11 @@ public class T6_dropdown_without_select {
         driver.manage().window().maximize();
         driver.get("https://beta.docuport.app/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+<<<<<<< HEAD
 //        }
+=======
+        }
+>>>>>>> origin/develop
 //        @Test
 //        WebElement userName = driver.findElement(By.xpath("//input[@id='input-14']"));
 //    WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
@@ -40,6 +44,11 @@ public class T6_dropdown_without_select {
 //        Thread.sleep(3000);
 //    WebElement inProgress = driver.findElement(By.xpath("//div[contains(text(),'In progress')]"));
 //        inProgress.click();
+<<<<<<< HEAD
 
     }
+=======
+//
+//    }
+>>>>>>> origin/develop
 }
