@@ -3,7 +3,9 @@ package com.loop.test.utillites;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class WebDriverFactory {
@@ -16,7 +18,13 @@ public class WebDriverFactory {
     public static WebDriver getDriver(String browserType) {
         if (browserType.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
-            return new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote -allow-origins=*");
+            DesiredCapabilities cp = new DesiredCapabilities();
+            cp.setCapability(ChromeOptions.CAPABILITY, options);
+            options.merge(cp);
+
+            return new ChromeDriver(options);
         } else if (browserType.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
