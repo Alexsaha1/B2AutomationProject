@@ -15,6 +15,8 @@ public class T2_java_faker {
         System.out.println("faker.chuckNorris().fact() = " + faker.chuckNorris().fact().replace("Chuck Norris", "Feyruz"));
 
 
+
+
     }
 
 }
