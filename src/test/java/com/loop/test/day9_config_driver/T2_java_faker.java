@@ -3,6 +3,8 @@ package com.loop.test.day9_config_driver;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 public class T2_java_faker {
+
+
     @Test
     public void java_faker(){
         Faker faker = new Faker();
@@ -13,6 +15,8 @@ public class T2_java_faker {
         System.out.println("faker.address().fullAddress() = " + faker.address().fullAddress());
         System.out.println("faker.finance().creditCard() = " + faker.finance().creditCard());
         System.out.println("faker.chuckNorris().fact() = " + faker.chuckNorris().fact().replace("Chuck Norris", "Feyruz"));
+
+
 
 
     }
