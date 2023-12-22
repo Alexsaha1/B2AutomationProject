@@ -22,6 +22,7 @@ public class T1_google_search {
         searchBox.sendKeys("Loop Academy"  + Keys.ENTER);
         assertEquals(Driver.getDriver().getTitle(), "Loop Academy - Google Search");
     }
+
     @Test
     public void docuport_search() throws InterruptedException {
         Driver.getDriver().get(ConfigurationReader.getProperty("env"));
