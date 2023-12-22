@@ -26,6 +26,7 @@ public class T4_dropdown_options {
 
     WebDriver driver;
 
+
     @BeforeMethod
     public void setUpMethod(){
         driver = WebDriverFactory.getDriver("chrome");

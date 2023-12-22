@@ -17,7 +17,7 @@ public class T1_locators_getText {
      * verify error message - please enter password
      */
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // setup the driver
         WebDriver driver = WebDriverFactory.getDriver("chrome");
