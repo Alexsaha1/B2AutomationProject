@@ -39,8 +39,6 @@ public class T1_window extends TestBase {
         System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
         System.out.println("driver.getTitle() = " + driver.getTitle());
 
-
-
         WebElement newWindow = driver.findElement(By.xpath("//h3[contains(text(),'New Window')]"));
         System.out.println("newWindow.getText() = " + newWindow.getText());
     }

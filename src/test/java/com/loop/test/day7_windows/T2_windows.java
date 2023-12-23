@@ -39,8 +39,11 @@ public class T2_windows extends TestBase {
 //                break;
 //            }
 //        }
+
 //BrowserUtils.switchWindowAndValidate(driver, "facebook.com", "Facebook");
         BrowserUtils.switchToWindow(driver, "Facebook");
+
+   
 
     }
 

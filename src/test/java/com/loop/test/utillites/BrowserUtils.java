@@ -13,6 +13,7 @@ public class BrowserUtils {
      * @param expectedUrl
      * @param expectedTitle
      * @author alex
+     * @author nadir
      * implements assertion
      */
     public static void switchWindowAndValidate(WebDriver driver, String expectedUrl, String expectedTitle){
@@ -45,5 +46,6 @@ public class BrowserUtils {
         driver.switchTo().window(origin);
 
     }
+
 
 }

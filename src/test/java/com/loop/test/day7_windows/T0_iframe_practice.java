@@ -34,6 +34,7 @@ public class T0_iframe_practice extends TestBase {
         String actualRight = right.getText();
         Assert.assertEquals(actualRight.trim(), "RIGHT");
 
+
     }
 
     @Test
@@ -46,6 +47,7 @@ public class T0_iframe_practice extends TestBase {
         String actualMiddle = middle.getText();
         Assert.assertEquals(actualMiddle.trim(), "MIDDLE");
 
+
     }
 
     @Test
@@ -56,6 +58,7 @@ public class T0_iframe_practice extends TestBase {
         System.out.println(bottom.getText() + " - actualBottom");
         String actualBottom = bottom.getText();
         Assert.assertEquals(actualBottom.trim(), "BOTTOM");
+
 
     }
 

@@ -10,6 +10,7 @@ public class T00_login_docuport extends TestBase {
         @Test
     public void test_login_logOut_docuport() throws InterruptedException {
 
+
             DocuportUtils.login(driver, DocuportConstants.CLIENT);
             DocuportUtils.logOut(driver);
 
@@ -21,5 +22,7 @@ public class T00_login_docuport extends TestBase {
 
             DocuportUtils.login(driver, DocuportConstants.SUPERVISOR);
             DocuportUtils.logOut(driver);
+
+          
         }
 }
