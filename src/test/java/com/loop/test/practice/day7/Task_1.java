@@ -1,11 +1,12 @@
-package com.loop.test.day7_windows;
+package com.loop.test.practice.day7;
+
 import com.loop.test.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class T0_iframe_practice extends TestBase {
+public class Task_1 extends TestBase {
 
     /*
     go to https://loopcamp.vercel.app/nested-frames.html
@@ -21,7 +22,8 @@ public class T0_iframe_practice extends TestBase {
         WebElement left = driver.findElement(By.xpath("//*[contains(text(),'LEFT')]"));
         System.out.println(left.getText() + " - actualLeft");
         String actualLeft = left.getText();
-        Assert.assertEquals(actualLeft.trim(), "LEFT");
+        Assert.assertEquals(actualLeft.trim(), "LEFT", "not");
+
     }
 
     @Test
@@ -33,7 +35,6 @@ public class T0_iframe_practice extends TestBase {
         System.out.println(right.getText() + " - actualRight");
         String actualRight = right.getText();
         Assert.assertEquals(actualRight.trim(), "RIGHT");
-
 
     }
 
@@ -47,7 +48,6 @@ public class T0_iframe_practice extends TestBase {
         String actualMiddle = middle.getText();
         Assert.assertEquals(actualMiddle.trim(), "MIDDLE");
 
-
     }
 
     @Test
@@ -59,8 +59,6 @@ public class T0_iframe_practice extends TestBase {
         String actualBottom = bottom.getText();
         Assert.assertEquals(actualBottom.trim(), "BOTTOM");
 
-
     }
-
 
 }

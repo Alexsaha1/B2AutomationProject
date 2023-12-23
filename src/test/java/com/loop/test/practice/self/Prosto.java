@@ -1,10 +1,13 @@
 package com.loop.test.practice.self;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.*;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -36,7 +39,13 @@ public class Prosto {
         WebElement lGs = driver.findElement(By.xpath("//div[@class='col-12 col-md-4']"));       //  ---> ????
         lGs.click();
         Thread.sleep(2000);
-//
+
+
+        Alert alert = driver.switchTo().alert();
+        System.out.println(alert.getText() + " - Alert text");
+        alert.accept();
+
+
 
 
 
