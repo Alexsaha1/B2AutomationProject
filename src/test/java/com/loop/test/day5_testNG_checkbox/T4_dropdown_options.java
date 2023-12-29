@@ -35,10 +35,10 @@ public class T4_dropdown_options {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
-    @AfterMethod
-    public void tearDownMethod(){
-        driver.close();
-    }
+//    @AfterMethod
+//    public void tearDownMethod(){
+//        driver.close();
+//    }
     @Test
     public void colorTest(){
         Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='oldSelectMenu']")));
