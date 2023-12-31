@@ -1,5 +1,4 @@
-package com.loop.test.practice;
-
+package com.loop.test.practice.day8;
 import com.github.javafaker.Faker;
 import com.loop.test.utillites.ConfigurationReader;
 import com.loop.test.utillites.Driver;
@@ -12,8 +11,8 @@ import org.openqa.selenium.support.ui.Select;
 import java.text.SimpleDateFormat;
 
 import static org.testng.Assert.assertEquals;
+public class Task {
 
-public class day8 {
     @Test
     public void goToUrl() throws InterruptedException {
         Driver.getDriver().get(ConfigurationReader.getProperty("task1"));
